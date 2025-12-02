@@ -1,19 +1,19 @@
-using System.IO;
+﻿using System.IO;
 using AdventOfCode2025.Day_1;
 
-class Day1Part1
+class Day1Part2
 {
     
     public static void Run()
     {
-        Console.WriteLine("Starting Day 1-1");
+        Console.WriteLine("Starting Day 1-2");
 
         var rotations = GetInput();
         
         Locks lockObject = new Locks(50);
         foreach (var rotation in rotations)
         {
-            lockObject.RotateAndCountExactZeroes(rotation);
+            lockObject.RotateAndCountAllZeroes(rotation);
         }
 
         Console.WriteLine(lockObject.GetNumberOfZeroes);
@@ -36,4 +36,3 @@ class Day1Part1
         return rotations;
     }   
 }
-
