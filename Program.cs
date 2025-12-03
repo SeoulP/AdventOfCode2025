@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using AdventOfCode2025.Day_2;
+
 Console.WriteLine("Select a Day and Part (ex: 1.1)");
 bool isStillProcessing = true;
 
@@ -15,6 +17,14 @@ do
             break;
         case "1.2":
             Day1Part2.Run();
+            isStillProcessing = false;
+            break;
+        case "2.1":
+            Day2Part1.Run();
+            isStillProcessing = false;
+            break;
+        case "2.2":
+            Day2Part2.Run();
             isStillProcessing = false;
             break;
         default:
